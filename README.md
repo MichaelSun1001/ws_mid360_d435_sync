@@ -57,4 +57,6 @@ roslaunch realsense2_camera demo_pointcloud.launch
 
 
 
-rosbag record /camera/color/image_raw/compressed /camera/depth/image_rect_raw/compressed /camera/depth/color/points /livox/lidar /livox/imu
+rosbag record /synced_image /synced_lidar /livox/imu
+
+<!-- rosbag record /camera/color/image_raw/compressed /camera/depth/image_rect_raw/compressed /camera/depth/color/points /livox/lidar /livox/imu -->
