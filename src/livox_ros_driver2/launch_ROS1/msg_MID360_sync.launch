@@ -1,0 +1,15 @@
+<launch>
+  <!-- Start the sync_node -->
+  <node name="sync_node" pkg="livox_ros_driver2" type="sync_node" output="screen">
+    <!-- <param name="image_topic" value="/camera/color/image_raw"/> -->
+    <param name="image_topic" value="/camera/color/image_raw/compressed"/>
+    <!-- 注意上面两个话题的差异，compressed表示经过压缩的图像，类型是sensor_msgs/CompressedImage不是sensor_msgs/Image -->
+    <param name="lidar_topic" value="/livox/lidar"/>
+    <param name="synced_image_topic" value="/synced_image"/>
+    <param name="synced_lidar_topic" value="/synced_lidar"/>
+    <param name="publish_rate" value="10.0"/>
+  </node>
+</launch>
+
+
+
