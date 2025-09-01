@@ -78,3 +78,30 @@ roslaunch livox_ros_driver2 msg_MID360_sync.launch
 rosbag record /synced_image /synced_lidar /livox/imu
 
 <!-- rosbag record /camera/color/image_raw/compressed /camera/depth/image_rect_raw/compressed /camera/depth/color/points /livox/lidar /livox/imu -->
+
+
+D435I相机内参
+
+---
+header: 
+  seq: 677
+  stamp: 
+    secs: 1756646807
+    nsecs: 770881891
+  frame_id: "camera_color_optical_frame"
+height: 480
+width: 640
+distortion_model: "plumb_bob"
+D: [0.0, 0.0, 0.0, 0.0, 0.0]
+K: [607.2879028320312, 0.0, 322.6806640625, 0.0, 606.75830078125, 250.453369140625, 0.0, 0.0, 1.0]
+R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+P: [607.2879028320312, 0.0, 322.6806640625, 0.0, 0.0, 606.75830078125, 250.453369140625, 0.0, 0.0, 0.0, 1.0, 0.0]
+binning_x: 0
+binning_y: 0
+roi: 
+  x_offset: 0
+  y_offset: 0
+  height: 0
+  width: 0
+  do_rectify: False
+---
