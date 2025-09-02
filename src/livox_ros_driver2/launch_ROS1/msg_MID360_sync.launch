@@ -8,6 +8,7 @@
     <param name="synced_image_topic" value="/synced_image"/>
     <param name="synced_lidar_topic" value="/synced_lidar"/>
     <param name="publish_rate" value="10.0"/>
+    <param name="sync_tolerance" value="0.05"/>
   </node>
 </launch>
 
